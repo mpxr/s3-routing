@@ -1,0 +1,52 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>about</KeyPrefixEquals>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>about.html</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>contact</KeyPrefixEquals>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>contact.html</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>products</KeyPrefixEquals>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>products.html</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+
+<RoutingRule>
+  <Condition>
+    <KeyPrefixEquals>facebook</KeyPrefixEquals>
+    <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+  </Condition>
+  <Redirect>
+    <HostName>facebook.com</HostName>
+    <ReplaceKeyPrefixWith>/YOUR_FACEBOOK_ACCOUNT_POSTFIX</ReplaceKeyPrefixWith>
+  </Redirect>
+</RoutingRule>
+
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>error</KeyPrefixEquals>
+      <HttpErrorCodeReturnedEquals>404</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>error.html</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
